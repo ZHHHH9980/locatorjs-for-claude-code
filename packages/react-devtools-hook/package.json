@@ -7,7 +7,7 @@
     "//test": "jest tests/",
     "//test:update": "jest tests/ -u",
     "dev": "tsc --watch --declaration --outDir dist --preserveWatchOutput",
-    "build": "tsc --declaration --outDir dist",
+    "build": "tsc --declaration --outDir dist --noEmit false",
     "ts": "tsc --noEmit"
   },
   "devDependencies": {

@@ -12,6 +12,10 @@ export type Target = {
 export type Targets = { [k: string]: Target };
 
 export const allTargets: Targets = {
+  clipboard: {
+    url: "clipboard://file/${projectPath}${filePath}:${line}:${column}",
+    label: "📋 Clipboard only",
+  },
   vscode: {
     url: "vscode://file/${projectPath}${filePath}:${line}:${column}",
     label: "VSCode",
